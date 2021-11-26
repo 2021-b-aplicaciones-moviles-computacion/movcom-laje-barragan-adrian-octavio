@@ -1,5 +1,5 @@
 import java.util.*
-fun main(): Double {
+fun main() {
         println("Hola mundo");//no es requerido, pero no es necesario
         //Tipo nombre = valor
         //int edad = 12;
