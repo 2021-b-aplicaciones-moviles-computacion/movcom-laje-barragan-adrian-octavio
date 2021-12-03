@@ -156,6 +156,22 @@ fun main() {
 
         println(vidaActual)
 
+        //CLASES
+        val ejemploUno  = Suma(1,2)
+        val ejemploDos = Suma(null,2)
+        val ejemploTres = Suma(1,null)
+        val ejemploCuatro = Suma(null,null)
+
+        println(ejemploUno.sumar())
+        println(Suma.historialSumas)
+        println(ejemploDos.sumar())
+        println(Suma.historialSumas)
+        println(ejemploTres.sumar())
+        println(Suma.historialSumas)
+        println(ejemploCuatro.sumar())
+        println(Suma.pi)
+        println(Suma.historialSumas)
+
 
 }
 
@@ -203,7 +219,7 @@ abstract class Numeros(
         }
 }
 
-
+/*
 class Suma(
         uno: Int, //Parametro Requerido
         dos: Int,//Parametro Requerido
@@ -221,5 +237,60 @@ class Suma(
         fun sumar(): Int{
                 val total: Int = numeroUno +numeroDos
                 return total
+        }
+}*/
+class Suma(
+        uno: Int, //Parametro Requerido
+        dos: Int,//Parametro Requerido
+): Numeros( //Constructor super
+        uno,
+        dos
+){
+        init {//Es el bloque de codigo de constructor primario
+                this.numeroUno
+                this.numeroDos
+                //X -> this.uno -> No existen
+                //X-> this.dos -> No existen
+        }
+        constructor(
+                uno: Int?, //Parametros
+                dos: Int   //Parametros
+        ):this(//Lllamada del constructor primario
+                if(uno == null) 0 else uno,
+                dos
+        ){
+                //Bloque de codigo del segundo constructor
+        }
+        constructor(//Tercer contructor
+                uno: Int,
+                dos: Int?
+        ):this(
+                uno,
+                if (dos == null) 0 else dos,
+        ){
+                //Bloque de codigo del tercer constructor
+        }
+        constructor(//Cuarto contructor
+                uno: Int?,
+                dos: Int?
+        ):this(
+                if (uno == null) 0 else uno,
+                if (dos == null) 0 else dos,
+        ){
+                //Bloque de codigo del cuarto constructor
+        }
+        //public fun sumar(): Int{
+        fun sumar(): Int{
+                val total: Int = numeroUno +numeroDos
+                agregarHistorial(total)
+                return total
+        }
+        //Singleton (Solo hay una sola instancia de companion object )
+        companion object{//Metodo y propiedades estáticas
+                val pi = 3.14
+                val historialSumas = arrayListOf<Int>()
+                fun agregarHistorial(valorNuevaSuma: Int){
+                        historialSumas.add(valorNuevaSuma)
+                }
         }
 }
