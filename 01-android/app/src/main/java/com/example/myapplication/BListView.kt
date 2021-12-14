@@ -118,7 +118,6 @@ class BListView : AppCompatActivity() {
         dialogo.show()
     }
 
-
     fun anadirItem(
         adaptador: ArrayAdapter<Int>,
         arreglo: ArrayList<Int>,
