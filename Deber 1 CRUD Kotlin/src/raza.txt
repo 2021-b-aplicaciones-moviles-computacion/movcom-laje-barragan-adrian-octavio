@@ -1,0 +1,1 @@
+Raza[0]: [ Pastor Aleman , Tue Jan 17 00:00:00 ECT 3922 , Alemania, 13, true] <- Especie { Canis lupus familiaris , Perro Omnivoro, true, 25.0} 

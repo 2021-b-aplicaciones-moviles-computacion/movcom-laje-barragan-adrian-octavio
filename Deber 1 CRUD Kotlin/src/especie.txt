@@ -1,0 +1,1 @@
+Especie[0]: [ Odocoileus , Venado , Herbivoro, true, 200.0]Especie[1]: [ Canis lupus familiaris , Perro , Omnivoro, true, 25.0]

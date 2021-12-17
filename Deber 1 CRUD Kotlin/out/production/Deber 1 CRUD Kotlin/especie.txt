@@ -1,0 +1,1 @@
+Especie[0]: [ Perro , Canis , Carnivora, true, 40.0]

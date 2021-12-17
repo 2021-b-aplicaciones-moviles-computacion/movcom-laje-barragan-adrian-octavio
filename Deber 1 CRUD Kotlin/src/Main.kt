@@ -21,9 +21,9 @@ fun main(){
         val selected = readLine()!!.toInt()
         when (selected){
             1 -> {
-                especie = Especie("Perro","Canis","Carnivora" , true, 40.0)
-                //especie = Especie(cargarString("Nombre de la especie"),cargarString("Otro nombre"),
-                //    cargarString("Alimentacion"), cargarBoolean("Reproduccion entre especies"), cargarDouble("El peso maximo en Kilogramos"))
+                //especie = Especie("Perro","Canis","Carnivora" , true, 40.0)
+                especie = Especie(cargarString("Nombre de la especie"),cargarString("Otro nombre"),
+                    cargarString("Alimentacion"), cargarBoolean("Reproduccion entre especies"), cargarDouble("El peso maximo en Kilogramos"))
                 Especie.crearEspecie(especie)
                 Especie.actualizarArchivoEspecie()
             }
@@ -61,12 +61,12 @@ fun main(){
                             println("Ingrese el indice las 1 para crear la raza:")
                             val indice = readLine()!!.toInt()
 
-                            raza = Raza("Perro", Date(1986,0,2) , "Londres", 10, true,
+                           /* raza = Raza("Perro", Date(1986,0,2) , "Londres", 10, true,
                             Especie.listaEspecie[indice].nombreEspecie,Especie.listaEspecie[indice].otroNombre, Especie.listaEspecie[indice].alimentacion,
-                                Especie.listaEspecie[indice].reproducirseEntreSi, Especie.listaEspecie[indice].pesoAproximadoKG)
-                            /*raza = Raza ( cargarString("nombre raza"), Date(cargarInt("año"),cargarInt("mes"),cargarInt("dia")) ,cargarString("region de origen") , cargarInt("esperanza de vida")
+                                Especie.listaEspecie[indice].reproducirseEntreSi, Especie.listaEspecie[indice].pesoAproximadoKG)*/
+                            raza = Raza ( cargarString("nombre raza"), Date(cargarInt("año"),cargarInt("mes"),cargarInt("dia")) ,cargarString("region de origen") , cargarInt("esperanza de vida")
                             ,cargarBoolean("es domesticado? true/false") , Especie.listaEspecie[indice].nombreEspecie , Especie.listaEspecie[indice].otroNombre , Especie.listaEspecie[indice].alimentacion
-                            , Especie.listaEspecie[indice].reproducirseEntreSi , Especie.listaEspecie[indice].pesoAproximadoKG)*/
+                            , Especie.listaEspecie[indice].reproducirseEntreSi , Especie.listaEspecie[indice].pesoAproximadoKG)
                             Raza.crearRaza(raza)
                             Raza.actualizarArchivoRaza()
                         }
