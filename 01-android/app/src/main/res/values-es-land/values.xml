@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hola_mundo">Condición 3</string>
+    <color name="text_hola_mundo">#7a54e8</color>
+    <color name="fondo_hola_mundo">#39934d</color>
+</resources>

@@ -1,0 +1,1 @@
+Raza[0]: [Nombre de la raza Pastor Aleman , Fecha de creacion:Tue Jan 17 00:00:00 ECT 3922 ,Region de origen: Alemania, Máxima esperanza de vida: 13, Es domestidado? true] <- Especie { Nombre de la Especie: Canis lupus familiaris , Otro nombre: Perro Alimentación: Omnivoro, Reproducirse entre la misma especie: true, Peso maximo aproximado de la especie: 35.0} 
