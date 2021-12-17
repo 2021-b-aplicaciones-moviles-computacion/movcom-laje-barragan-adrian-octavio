@@ -34,9 +34,9 @@ class MainActivity() : AppCompatActivity() {
                 irActividad(BListView::class.java)
             }
         val botonIntent = findViewById<Button>(R.id.btn_intent)
-        botonListView
+        botonIntent
             .setOnClickListener {
-                irActividad(BListView::class.java)
+                irActividadConParametros(CIntentExplicitoParametros::class.java)
             }
 
     }
@@ -47,7 +47,7 @@ class MainActivity() : AppCompatActivity() {
         intentExplicito.putExtra("nombre", "Adrian")
         intentExplicito.putExtra("apellido", "Eguez")
         intentExplicito.putExtra("edad", "32")
-        resultLauncher.launch(intent)
+        resultLauncher.launch(intentExplicito)
         //startActivityForResult(intent,CODIGO_RESPUESTA_INTENT_EXPLICITO)
     }
     fun irActividad(

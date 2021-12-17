@@ -1,1 +1,1 @@
-Especie[0]: [ Perro , Canis , Carnivora, true, 40.0]
+Especie[0]: [Nombre especie: Odoco ideus , Otro nombre: Venado , Alimentación: Herbivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 200.0]

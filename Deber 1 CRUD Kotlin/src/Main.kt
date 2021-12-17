@@ -23,7 +23,7 @@ fun main(){
             1 -> {
                 //especie = Especie("Perro","Canis","Carnivora" , true, 40.0)
                 especie = Especie(cargarString("Nombre de la especie"),cargarString("Otro nombre"),
-                    cargarString("Alimentacion"), cargarBoolean("Reproduccion entre especies"), cargarDouble("El peso maximo en Kilogramos"))
+                    cargarString("Alimentacion"), cargarBoolean("Reproduccion entre especies? true/false"), cargarDouble("El peso maximo en Kilogramos"))
                 Especie.crearEspecie(especie)
                 Especie.actualizarArchivoEspecie()
             }
@@ -58,7 +58,7 @@ fun main(){
                     when(selected1){
                         1->{
                             Especie.leerEspecies()
-                            println("Ingrese el indice las 1 para crear la raza:")
+                            println("Ingrese el indice la especie para crear la raza:")
                             val indice = readLine()!!.toInt()
 
                            /* raza = Raza("Perro", Date(1986,0,2) , "Londres", 10, true,
@@ -157,9 +157,9 @@ open class Especie(
         fun leerEspecies(){
             listaEspecie
                 .forEachIndexed() { index: Int, valorActual: Especie ->
-                    println("Especie[${index}]: [ ${valorActual.nombreEspecie} , ${valorActual.otroNombre} " +
-                            ", ${valorActual.alimentacion}, ${valorActual.reproducirseEntreSi}" +
-                            ", ${valorActual.pesoAproximadoKG}]")
+                    println("Especie[${index}]: [Nombre especie: ${valorActual.nombreEspecie} , Otro nombre: ${valorActual.otroNombre} " +
+                            ", Alimentacion: ${valorActual.alimentacion}, Reproducirse entre la misma especi: ${valorActual.reproducirseEntreSi}" +
+                            ",Peso maximo aproximado en kilogramo: ${valorActual.pesoAproximadoKG}]")
                 }
             if(listaEspecie.size == 0)
                 println("Esta vacia!!")
@@ -176,7 +176,7 @@ open class Especie(
                     especie.nombreEspecie = cargarString("Nombre de la especie")
                     especie.otroNombre = cargarString("Otro nombre")
                     especie.alimentacion = cargarString("Alimentacion")
-                    especie.reproducirseEntreSi = cargarBoolean("Reproduccion entre especies")
+                    especie.reproducirseEntreSi = cargarBoolean("Reproduccion entre especies? true/false")
                     especie.pesoAproximadoKG = cargarDouble("El peso maximo en Kilogramos")
                 }
                 return@mapIndexed especie
@@ -188,9 +188,9 @@ open class Especie(
                 FileWriter(ruta, false).use { fw ->
                     BufferedWriter(fw).use { bw ->
                         PrintWriter(bw).use { out ->
-                            listaEspecie.forEachIndexed() { index, valorActual ->  out.print("Especie[${index}]: [ ${valorActual.nombreEspecie} , ${valorActual.otroNombre} " +
-                                    ", ${valorActual.alimentacion}, ${valorActual.reproducirseEntreSi}" +
-                                    ", ${valorActual.pesoAproximadoKG}]") }
+                            listaEspecie.forEachIndexed() { index, valorActual ->  out.println("Especie[${index}]: [Nombre especie: ${valorActual.nombreEspecie} , Otro nombre: ${valorActual.otroNombre} " +
+                                    ", Alimentación: ${valorActual.alimentacion}, Reproducirse entre la misma especie: ${valorActual.reproducirseEntreSi} " +
+                                    " ,Peso maximo aproximado en kilogramo: ${valorActual.pesoAproximadoKG}]") }
                         }
                     }
                 }
@@ -219,11 +219,11 @@ class Raza(
         fun leerRazas(){
             listaRaza
                 .forEachIndexed() { index: Int, valorActual: Raza ->
-                    println("Raza[${index}]: [ ${valorActual.nombreRaza} , ${valorActual.fechaCreacion} " +
-                            ", ${valorActual.regionOrigen}, ${valorActual.maximaEsperanzaVida}" +
-                            ", ${valorActual.domesticado}] <- Especie { ${valorActual.nombreEspecie} , ${valorActual.otroNombre} " +
-                            "${valorActual.alimentacion}, ${valorActual.reproducirseEntreSi}" +
-                            ", ${valorActual.pesoAproximadoKG}} ")
+                    println("Raza[${index}]: [Nombre de la raza ${valorActual.nombreRaza} , Fecha de creacion:${valorActual.fechaCreacion} " +
+                            ",Region de origen: ${valorActual.regionOrigen}, Máxima esperanza de vida: ${valorActual.maximaEsperanzaVida}" +
+                            ", Es domestidado? ${valorActual.domesticado}] <- Especie { Nombre de la Especie: ${valorActual.nombreEspecie} , Otro nombre: ${valorActual.otroNombre} " +
+                            "Alimentación: ${valorActual.alimentacion}, Reproducirse entre la misma especie: ${valorActual.reproducirseEntreSi}" +
+                            ", Peso maximo aproximado de la especie: ${valorActual.pesoAproximadoKG}} ")
                 }
             if(listaRaza.size == 0)
                 println("Esta vacia!!")
@@ -260,11 +260,11 @@ class Raza(
                 FileWriter(ruta, false).use { fw ->
                     BufferedWriter(fw).use { bw ->
                         PrintWriter(bw).use { out ->
-                            listaRaza.forEachIndexed() { index, valorActual ->  out.print("Raza[${index}]: [ ${valorActual.nombreRaza} , ${valorActual.fechaCreacion} " +
-                                    ", ${valorActual.regionOrigen}, ${valorActual.maximaEsperanzaVida}" +
-                                    ", ${valorActual.domesticado}] <- Especie { ${valorActual.nombreEspecie} , ${valorActual.otroNombre} " +
-                                    "${valorActual.alimentacion}, ${valorActual.reproducirseEntreSi}" +
-                                    ", ${valorActual.pesoAproximadoKG}} ") }
+                            listaRaza.forEachIndexed() { index, valorActual ->  out.println("Raza[${index}]: [Nombre de la raza ${valorActual.nombreRaza} , Fecha de creacion:${valorActual.fechaCreacion} " +
+                                    ",Region de origen: ${valorActual.regionOrigen}, Máxima esperanza de vida: ${valorActual.maximaEsperanzaVida}" +
+                                    ", Es domestidado? ${valorActual.domesticado}] <- Especie { Nombre de la Especie: ${valorActual.nombreEspecie} , Otro nombre: ${valorActual.otroNombre} " +
+                                    "Alimentación: ${valorActual.alimentacion}, Reproducirse entre la misma especie: ${valorActual.reproducirseEntreSi}" +
+                                    ", Peso maximo aproximado de la especie: ${valorActual.pesoAproximadoKG}} ") }
                         }
                     }
                 }

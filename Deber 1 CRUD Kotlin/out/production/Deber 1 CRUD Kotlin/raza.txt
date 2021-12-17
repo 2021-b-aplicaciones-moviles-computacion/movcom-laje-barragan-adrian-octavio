@@ -1,1 +1,0 @@
-Raza[0]: [ Perro , Sat Jan 02 00:00:00 ECT 3886 , Londres, 10, true] <- Especie { Perro , Canis Carnivora, true, 40.0} Raza[1]: [ Perro , Sat Jan 02 00:00:00 ECT 3886 , Londres, 10, true] <- Especie { Perro , Canis Carnivora, true, 40.0} 

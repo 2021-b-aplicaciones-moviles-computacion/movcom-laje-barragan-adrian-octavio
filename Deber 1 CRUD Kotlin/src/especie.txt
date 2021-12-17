@@ -1,1 +1,1 @@
-Especie[0]: [ Odocoileus , Venado , Herbivoro, true, 200.0]Especie[1]: [ Canis lupus familiaris , Perro , Omnivoro, true, 25.0]
+Especie[0]: [Nombre especie: Canis lupus familiaris , Otro nombre: Perro , Alimentación: Omnivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 35.0]
