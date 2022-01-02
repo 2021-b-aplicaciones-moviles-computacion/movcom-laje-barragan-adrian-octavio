@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import android.util.Log
 import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContract
@@ -14,10 +15,16 @@ class MainActivity() : AppCompatActivity() {
     var resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Activity.RESULT_OK){
-
+        if (result.resultCode == Activity.RESULT_OK) {
+            if(result.data != null){
+                val data = result.data
+                Log.i("intent-epn", "${data?.getStringExtra("nombreModificado")}")
+                Log.i("intent-epn", "${data?.getIntExtra("edadModificado", 0)}")
+            }
         }
     }
+
+    val CODIGO_RESPUESTA_INTENT_IMPLICITO = 402
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,23 +43,45 @@ class MainActivity() : AppCompatActivity() {
         val botonIntent = findViewById<Button>(R.id.btn_intent)
         botonIntent
             .setOnClickListener {
-                irActividadConParametros(CIntentExplicitoParametros::class.java)
+                abrirActividadConParametros(CIntentExplicitoParametros::class.java)
+            }
+        val botonIntentImplicito = findViewById<Button>(R.id.btn_ir_intent_implicito)
+        botonIntentImplicito
+            .setOnClickListener {
+                val intentConRespuesta = Intent(
+                    Intent.ACTION_PICK,
+                    ContactsContract.CommonDataKinds.Phone.CONTENT_URI
+                )
+                startActivityForResult(intentConRespuesta, CODIGO_RESPUESTA_INTENT_IMPLICITO)
             }
 
     }
-    fun irActividadConParametros(
-        clase: Class<*>){
+    fun abrirActividadConParametros(
+        clase: Class<*>,
+    ) {
         val intentExplicito = Intent(this, clase)
-        //Enviar parametros (Solamente variable primitivas)
+        // Enviar parametros (solamente variables primitivas)
         intentExplicito.putExtra("nombre", "Adrian")
         intentExplicito.putExtra("apellido", "Eguez")
-        intentExplicito.putExtra("edad", "32")
+        intentExplicito.putExtra("edad", 32)
+        intentExplicito.putExtra("entrenador",BEntrenador("a","b"))
         resultLauncher.launch(intentExplicito)
-        //startActivityForResult(intent,CODIGO_RESPUESTA_INTENT_EXPLICITO)
+//
+//        startActivityForResult(intent, CODIGO_RESPUESTA_INTENT_EXPLICITO)
+
+//        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+//            when (it.resultCode) {
+//                Activity.RESULT_OK -> {
+//                    //Ejecutar codigo OK
+//                }
+//            }
+//        }
+
     }
     fun irActividad(
-        clase: Class<*>){
-        val intent = Intent(this, clase)
-        startActivity(intent)
+        clase: Class<*>,
+    ){
+            val intent = Intent(this, clase)
+            startActivity(intent)
+        }
     }
-}

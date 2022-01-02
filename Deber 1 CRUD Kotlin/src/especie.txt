@@ -1,1 +1,1 @@
-Especie[0]: [Nombre especie: Canis lupus familiaris , Otro nombre: Perro , Alimentación: Omnivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 35.0]
+Especie[0]: [Nombre especie: Canis lupus familiaris , Otro nombre: Perro , Alimentación: Omnivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 30.0]

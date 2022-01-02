@@ -1,1 +1,1 @@
-Especie[0]: [Nombre especie: Odoco ideus , Otro nombre: Venado , Alimentación: Herbivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 200.0]
+Especie[0]: [Nombre especie: Canis luous familiaris , Otro nombre: Perro , Alimentación: Omnivoro, Reproducirse entre la misma especie: true  ,Peso maximo aproximado en kilogramo: 30.0]

@@ -1,8 +1,10 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 
 class CIntentExplicitoParametros : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,8 +13,24 @@ class CIntentExplicitoParametros : AppCompatActivity() {
         val nombre = intent.getStringExtra("nombre")
         val apellido = intent.getStringExtra("apellido")
         val edad = intent.getIntExtra("edad", 0)
-        Log.i("intnet","Valores: ${nombre} ${apellido} ${edad} " )
+        val entrenador = intent.getParcelableExtra<BEntrenador>("entrenador")
+        Log.i("intent-epn", "Valores: ${nombre} ${apellido} ${edad} ${entrenador}")
 
-        //val boton = finda
+        val boton = findViewById<Button>(R.id.btn_devolver_respuesta)
+        boton
+            .setOnClickListener { devolverRespuesta() }
+
+    }
+    fun devolverRespuesta(){
+        val intentDevolverParametros = Intent()
+        intentDevolverParametros.putExtra("nombreModificado", "Octavio")
+        intentDevolverParametros.putExtra("edadModificado", 5)
+//      this.setResult
+        setResult(
+            RESULT_OK,
+            intentDevolverParametros
+        )
+//      this.finish()
+        finish()
     }
 }
