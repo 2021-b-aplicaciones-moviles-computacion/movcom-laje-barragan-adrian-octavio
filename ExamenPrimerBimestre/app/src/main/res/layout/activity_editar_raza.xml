@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     tools:context=".EditarRaza">
 
     <EditText
@@ -60,6 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
         android:text="Actualizar"
+        android:backgroundTint="#FF403C36"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -109,8 +111,6 @@
         android:id="@+id/textTituloEditarRaza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
-        android:backgroundTint="@color/purple_500"
         android:text="Actualizar"
         android:textColor="@color/white"
         android:textSize="20sp"

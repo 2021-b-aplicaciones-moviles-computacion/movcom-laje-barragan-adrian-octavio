@@ -3,6 +3,7 @@ package com.example.examenprimerbimestre
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
@@ -39,4 +40,5 @@ class CrearRaza : AppCompatActivity() {
         BBaseDatosMemoria.arregloBRaza.add(BRaza(nombre, nombreCientifico, region, esperanza, domesticado, nombreEspecie ))
 
     }
+
 }

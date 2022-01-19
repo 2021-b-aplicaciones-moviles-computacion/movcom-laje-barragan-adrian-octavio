@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FF9800"
     tools:context=".EditarEspecie">
 
 
@@ -56,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
+        android:backgroundTint="#FF403C36"
         android:text="Editar Especie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.536"
@@ -75,14 +77,12 @@
             android:id="@+id/rdb_Edittrue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="true"
             android:text="si" />
 
         <RadioButton
             android:id="@+id/rdb_DomesticadoFalse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checked="false"
             android:text="no" />
 
     </RadioGroup>
@@ -103,7 +103,6 @@
         android:id="@+id/textNombreEspecie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
         android:text="nombreEspecie"
         android:textColor="@color/white"
         android:textSize="20sp"
