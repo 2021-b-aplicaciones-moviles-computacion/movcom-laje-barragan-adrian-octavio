@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685427112158",
+    "project_id": "b-aolb-moviles",
+    "storage_bucket": "b-aolb-moviles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685427112158:android:e8bfe7ac2e2e1f8fc8aa4f",
+        "android_client_info": {
+          "package_name": "com.example.proyectofirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685427112158-brlg5kqv93v60mtkp8ud0g329ae4ce6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_2p-F0wD-PAB_qges64v6BQqLZQKHkuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685427112158-brlg5kqv93v60mtkp8ud0g329ae4ce6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
