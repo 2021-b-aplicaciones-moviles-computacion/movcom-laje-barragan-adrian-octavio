@@ -1,0 +1,2 @@
+com/example/proyectofirebase/BuildConfig.java
+ com.example.proyectofirebase.BuildConfig

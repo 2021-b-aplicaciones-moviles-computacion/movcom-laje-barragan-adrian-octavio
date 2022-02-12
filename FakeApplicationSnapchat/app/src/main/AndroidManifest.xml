@@ -16,7 +16,16 @@
         android:theme="@style/Theme.FakeApplicationSnapchat"
         tools:targetApi="m">
         <activity
-            android:name=".DescubirActivity"
+            android:name=".ui.ExplorarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EscanearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.StoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DescubrirActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MensajeActivity"

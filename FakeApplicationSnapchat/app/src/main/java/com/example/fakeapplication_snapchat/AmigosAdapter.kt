@@ -67,7 +67,7 @@ class AmigosAdapter(private val contexto: ChatActivity,
                 nuevalista.removeAt(index)
                 BAmigos.data.removeAt(index)
                 notifyDataSetChanged()
-                val toast = Toast.makeText(contexto, "Hello Javatpoint", Toast.LENGTH_SHORT)
+                val toast = Toast.makeText(contexto, "Eliminado", Toast.LENGTH_SHORT)
                 toast.show()
             }
         }

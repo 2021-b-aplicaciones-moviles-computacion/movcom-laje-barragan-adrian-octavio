@@ -1,0 +1,109 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.examenprimerbimestre"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:5:5-39:19
+12        android:allowBackup="true"
+12-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\Adrian\.gradle\caches\transforms-3\2211b2af80c2040823aefb9bbce90544\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.ExamenPrimerBimestre" >
+21-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:11:9-58
+22        <activity
+22-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:12:9-14:40
+23            android:name="com.example.examenprimerbimestre.EditarRaza"
+23-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:13:13-39
+24            android:exported="false" />
+24-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:14:13-37
+25        <activity
+25-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:15:9-17:40
+26            android:name="com.example.examenprimerbimestre.CrearRaza"
+26-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:16:13-38
+27            android:exported="false" />
+27-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:17:13-37
+28        <activity
+28-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:18:9-20:40
+29            android:name="com.example.examenprimerbimestre.Raza"
+29-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:19:13-33
+30            android:exported="false" />
+30-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:20:13-37
+31        <activity
+31-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:21:9-23:40
+32            android:name="com.example.examenprimerbimestre.EditarEspecie"
+32-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:22:13-42
+33            android:exported="false" />
+33-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:23:13-37
+34        <activity
+34-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:24:9-26:40
+35            android:name="com.example.examenprimerbimestre.CrearEspecie"
+35-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:25:13-41
+36            android:exported="false" />
+36-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:26:13-37
+37        <activity
+37-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:27:9-29:40
+38            android:name="com.example.examenprimerbimestre.Especie"
+38-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:28:13-36
+39            android:exported="false" />
+39-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:29:13-37
+40        <activity
+40-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:30:9-38:20
+41            android:name="com.example.examenprimerbimestre.MainActivity"
+41-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:31:13-41
+42            android:exported="true" >
+42-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:32:13-36
+43            <intent-filter>
+43-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:33:13-37:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:34:17-69
+44-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:34:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:36:17-77
+46-->D:\Git\Aplicaciones Mobiles\movcom-laje-barragan-adrian-octavio\ExamenPrimerBimestre\app\src\main\AndroidManifest.xml:36:27-74
+47            </intent-filter>
+48        </activity>
+49
+50        <provider
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+51            android:name="androidx.startup.InitializationProvider"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+52            android:authorities="com.example.examenprimerbimestre.androidx-startup"
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+53            android:exported="false" >
+53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+54            <meta-data
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+55                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+56                android:value="androidx.startup" />
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Adrian\.gradle\caches\transforms-3\39db454ca943e4d6ae7bf175ff33fbf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+57            <meta-data
+57-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Adrian\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+58                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+58-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Adrian\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+59                android:value="androidx.startup" />
+59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Adrian\.gradle\caches\transforms-3\4dc7c0429757f6a5acea98e5401439bf\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+60        </provider>
+61    </application>
+62
+63</manifest>

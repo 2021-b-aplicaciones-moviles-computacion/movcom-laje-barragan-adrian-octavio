@@ -14,6 +14,7 @@ import com.example.fakeapplication_snapchat.utils.BotResponse
 import com.example.fakeapplication_snapchat.utils.Constants.OPEN_GOOGLE
 import com.example.fakeapplication_snapchat.utils.Constants.OPEN_SEARCH
 import com.example.fakeapplication_snapchat.utils.Time
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_mensaje.*
 import kotlinx.coroutines.*
 

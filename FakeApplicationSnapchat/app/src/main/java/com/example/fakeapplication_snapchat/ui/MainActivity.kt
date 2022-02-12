@@ -21,28 +21,34 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        replaceFragmet(mapaFragmet)
         bottom_navigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.chatFragment -> {
                     val i = Intent(this, ChatActivity::class.java)
                     startActivity(i);
                 }
-                R.id.storiesFragment -> replaceFragmet(historiasFragmet)
-                R.id.discoverFragment -> replaceFragmet(descubrirFragmet)
-                R.id.cameraFragment -> replaceFragmet(camaraFragmet)
-                R.id.mapFragment -> replaceFragmet(mapaFragmet)
+                R.id.storiesFragment -> {
+                    val i = Intent(this, StoriesActivity::class.java)
+                    startActivity(i)
+                }
+                R.id.discoverFragment -> {
+                    val i = Intent(this, DescubrirActivity::class.java)
+                    startActivity(i)
+                }
+                R.id.cameraFragment -> {
+                    val i = Intent(this, EscanearActivity::class.java)
+                    startActivity(i)
+                }
             }
             true
         }
 
     }
 private  fun replaceFragmet(fragment: Fragment){
-    if (fragment != null){
-        val transaccion = supportFragmentManager.beginTransaction()
-        transaccion.replace(R.id.fragment_container,fragment)
-        transaccion.commit()
-    }
+    val transaccion = supportFragmentManager.beginTransaction()
+    transaccion.replace(R.id.fragment_container,fragment)
+    transaccion.commit()
 }
 
 }

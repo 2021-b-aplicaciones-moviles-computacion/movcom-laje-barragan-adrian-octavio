@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">685427112158-brlg5kqv93v60mtkp8ud0g329ae4ce6t.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">685427112158</string>
+    <string name="google_api_key" translatable="false">AIzaSyA_2p-F0wD-PAB_qges64v6BQqLZQKHkuk</string>
+    <string name="google_app_id" translatable="false">1:685427112158:android:e8bfe7ac2e2e1f8fc8aa4f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA_2p-F0wD-PAB_qges64v6BQqLZQKHkuk</string>
+    <string name="google_storage_bucket" translatable="false">b-aolb-moviles.appspot.com</string>
+    <string name="project_id" translatable="false">b-aolb-moviles</string>
+</resources>

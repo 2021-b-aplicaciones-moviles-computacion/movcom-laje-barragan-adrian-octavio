@@ -1,0 +1,86 @@
+[
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_descubir.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_descubir.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_mensaje.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\content_mensaje.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_explorar.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_explorar.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_camara.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\fragment_camara.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_chat.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\fragment_chat.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\card_view_design.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\card_view_design.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_descubrir.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\fragment_descubrir.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_mapa.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\fragment_mapa.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_stories.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_stories.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_container_video.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\item_container_video.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_historias.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\item_historias.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\rv_chat.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\rv_chat.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\mensaje_item.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\mensaje_item.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_escanear.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_escanear.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_chat.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_stories.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\fragment_stories.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_disover.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\item_disover.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_suscripciones.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\item_suscripciones.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_descubir.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\item_descubir.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_mensaje.xml",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\FakeApplicationSnapchat\\app\\src\\main\\res\\layout\\activity_mensaje.xml"
+    }
+]

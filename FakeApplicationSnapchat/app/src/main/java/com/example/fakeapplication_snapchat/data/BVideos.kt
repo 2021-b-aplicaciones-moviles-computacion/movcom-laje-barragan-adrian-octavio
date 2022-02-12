@@ -36,8 +36,8 @@ class BVideos(
         }
         var data = ArrayList<BVideos>()
             get() = arrayListOf<BVideos>(
-                BVideos("Adrian","#video", R.drawable.ic_person_1),
-                BVideos("Maria","#tendencia", R.drawable.ic_person_2)
+                BVideos("Adrian","#video #humor", R.drawable.ic_person_1),
+                BVideos("Maria","#tendencia #aplicaciones #moviles", R.drawable.ic_person_2)
             )
     }
 }

@@ -21,14 +21,22 @@ class ChatActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chat)
         bottom_navigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.chatFragment -> {
-                    val i = Intent(this, ChatActivity::class.java)
-                    startActivity(i);
+                R.id.storiesFragment -> {
+                    val i = Intent(this, StoriesActivity::class.java)
+                    startActivity(i)
                 }
-                R.id.storiesFragment -> {}
-                R.id.discoverFragment -> {}
-                R.id.cameraFragment -> {}
-                R.id.mapFragment -> {}
+                R.id.discoverFragment -> {
+                    val i = Intent(this, DescubrirActivity::class.java)
+                    startActivity(i)
+                }
+                R.id.cameraFragment -> {
+                    val i = Intent(this, EscanearActivity::class.java)
+                    startActivity(i)
+                }
+                R.id.mapFragment -> {
+                    val i = Intent(this, MainActivity::class.java)
+                    startActivity(i)
+                }
             }
             true
         }
