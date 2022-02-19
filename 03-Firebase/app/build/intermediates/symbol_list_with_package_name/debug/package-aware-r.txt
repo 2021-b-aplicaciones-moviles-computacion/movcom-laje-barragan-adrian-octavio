@@ -2725,7 +2725,13 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btn_consultar
+id btn_crear_producto
+id btn_crear_restaurante
+id btn_datos_prueba
 id btn_holder
+id btn_ir_producto
+id btn_ir_restaurante
 id btn_login
 id btn_logout
 id buttonPanel
@@ -2830,6 +2836,9 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
+id et_nombre_producto
+id et_nombre_restaurante
+id et_precio_producto
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3109,6 +3118,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3254,6 +3264,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cproducto
+layout activity_drestaurante
 layout activity_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row

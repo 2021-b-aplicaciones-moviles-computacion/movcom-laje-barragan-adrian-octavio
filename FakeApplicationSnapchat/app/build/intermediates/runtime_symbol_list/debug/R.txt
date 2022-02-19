@@ -3214,7 +3214,6 @@ int id percent 0x7f0a01ae
 int id pin 0x7f0a01af
 int id position 0x7f0a01b0
 int id postLayout 0x7f0a01b1
-int id progressBar 0x7f0a01b2
 int id progress_circular 0x7f0a01b3
 int id progress_horizontal 0x7f0a01b4
 int id radio 0x7f0a01b5
@@ -3527,11 +3526,6 @@ int layout exo_styled_settings_list 0x7f0d003c
 int layout exo_styled_settings_list_item 0x7f0d003d
 int layout exo_styled_sub_settings_list_item 0x7f0d003e
 int layout exo_track_selection_dialog 0x7f0d003f
-int layout fragment_camara 0x7f0d0040
-int layout fragment_chat 0x7f0d0041
-int layout fragment_descubrir 0x7f0d0042
-int layout fragment_mapa 0x7f0d0043
-int layout fragment_stories 0x7f0d0044
 int layout item_container_video 0x7f0d0045
 int layout item_descubir 0x7f0d0046
 int layout item_disover 0x7f0d0047

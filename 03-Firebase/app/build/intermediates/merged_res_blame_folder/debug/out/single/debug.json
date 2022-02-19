@@ -32,6 +32,14 @@
         "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_cproducto.xml.flat",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\src\\main\\res\\layout\\activity_cproducto.xml"
+    },
+    {
+        "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_drestaurante.xml.flat",
+        "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\src\\main\\res\\layout\\activity_drestaurante.xml"
+    },
+    {
         "merged": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "D:\\Git\\Aplicaciones Mobiles\\movcom-laje-barragan-adrian-octavio\\03-Firebase\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },

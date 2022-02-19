@@ -4,15 +4,7 @@ import android.os.Parcel
 import android.os.Parcelable
 import com.example.fakeapplication_snapchat.R
 
-/*
-class BDiscover(
-    private val nombre: String?,
-    private val artista: String?,
-    private val imagen: Int
-    ):Parcelable{
-    constructor(parcel: Parcel) : this(
 
-        */
 class BDiscover(
     val nombre: String?,
     val descripcion: String?,
@@ -43,10 +35,10 @@ class BDiscover(
         override fun newArray(size: Int): Array<BDiscover?> {
             return arrayOfNulls(size)
         }
-        var data = ArrayList<BVideos>()
-            get() = arrayListOf<BVideos>(
-                BVideos("Adrian","#video #humor", R.drawable.ic_person_1),
-                BVideos("Maria","#tendencia #aplicaciones #moviles", R.drawable.ic_person_2)
+        var data = ArrayList<BDiscover>()
+            get() = arrayListOf<BDiscover>(
+                BDiscover("Adrian","#video #humor", R.drawable.ic_person_1),
+                BDiscover("Maria","#tendencia #aplicaciones #moviles", R.drawable.ic_person_2)
             )
     }
 }

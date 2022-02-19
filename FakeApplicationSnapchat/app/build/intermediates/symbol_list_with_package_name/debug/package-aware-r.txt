@@ -3215,7 +3215,6 @@ id percent
 id pin
 id position
 id postLayout
-id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -3528,11 +3527,6 @@ layout exo_styled_settings_list
 layout exo_styled_settings_list_item
 layout exo_styled_sub_settings_list_item
 layout exo_track_selection_dialog
-layout fragment_camara
-layout fragment_chat
-layout fragment_descubrir
-layout fragment_mapa
-layout fragment_stories
 layout item_container_video
 layout item_descubir
 layout item_disover

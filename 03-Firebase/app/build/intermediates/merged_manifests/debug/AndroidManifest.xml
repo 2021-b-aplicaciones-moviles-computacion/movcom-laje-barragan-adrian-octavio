@@ -23,6 +23,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.ProyectoFirebase" >
         <activity
+            android:name="com.example.proyectofirebase.DRestaurante"
+            android:exported="false" />
+        <activity
+            android:name="com.example.proyectofirebase.CProducto"
+            android:exported="false" />
+        <activity
             android:name="com.example.proyectofirebase.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -175,6 +181,15 @@
             android:exported="false" >
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
         </service>
 

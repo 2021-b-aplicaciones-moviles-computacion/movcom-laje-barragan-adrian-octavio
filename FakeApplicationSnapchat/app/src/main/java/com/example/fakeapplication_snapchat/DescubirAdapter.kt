@@ -58,12 +58,11 @@ class DescubirAdapter(
         fun bind(historia:BVideos){
             nombre.setText(historia.nombre)
             descripcion.setText(historia.descripcion)
-            val mediaController = MediaController(contexto)
-            mediaController.setAnchorView(video)
-            video.setVideoPath("https://videocdn.bodybuilding.com/video/mp4/62000/62792m.mp4");
+            video.setVideoPath(historia.video)
             video.requestFocus()
             var opcion = "start"
             video.start()
+
             video.setOnClickListener {
                 if ( opcion.equals("start")) {
                     video.pause()

@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.VideoView;
 import androidx.annotation.NonNull;
@@ -30,9 +29,6 @@ public final class ItemDescubirBinding implements ViewBinding {
   public final LinearLayout linearLayout;
 
   @NonNull
-  public final ProgressBar progressBar;
-
-  @NonNull
   public final TextView textVideoDescription;
 
   @NonNull
@@ -42,13 +38,11 @@ public final class ItemDescubirBinding implements ViewBinding {
   public final VideoView videoView;
 
   private ItemDescubirBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView favorites,
-      @NonNull LinearLayout linearLayout, @NonNull ProgressBar progressBar,
-      @NonNull TextView textVideoDescription, @NonNull TextView textVideoTitle,
-      @NonNull VideoView videoView) {
+      @NonNull LinearLayout linearLayout, @NonNull TextView textVideoDescription,
+      @NonNull TextView textVideoTitle, @NonNull VideoView videoView) {
     this.rootView = rootView;
     this.favorites = favorites;
     this.linearLayout = linearLayout;
-    this.progressBar = progressBar;
     this.textVideoDescription = textVideoDescription;
     this.textVideoTitle = textVideoTitle;
     this.videoView = videoView;
@@ -93,12 +87,6 @@ public final class ItemDescubirBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar;
-      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
-        break missingId;
-      }
-
       id = R.id.textVideoDescription;
       TextView textVideoDescription = ViewBindings.findChildViewById(rootView, id);
       if (textVideoDescription == null) {
@@ -118,7 +106,7 @@ public final class ItemDescubirBinding implements ViewBinding {
       }
 
       return new ItemDescubirBinding((ConstraintLayout) rootView, favorites, linearLayout,
-          progressBar, textVideoDescription, textVideoTitle, videoView);
+          textVideoDescription, textVideoTitle, videoView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -7,19 +7,19 @@ import com.example.fakeapplication_snapchat.R
 class BVideos(
     val nombre: String?,
     val descripcion: String?,
-    val video: Int
+    val video: String?
 ):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
-        parcel.readInt()
+        parcel.readString()
     ) {
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(nombre)
         parcel.writeString(descripcion)
-        parcel.writeInt(video)
+        parcel.writeString(video)
     }
 
     override fun describeContents(): Int {
@@ -36,8 +36,9 @@ class BVideos(
         }
         var data = ArrayList<BVideos>()
             get() = arrayListOf<BVideos>(
-                BVideos("Adrian","#video #humor", R.drawable.ic_person_1),
-                BVideos("Maria","#tendencia #aplicaciones #moviles", R.drawable.ic_person_2)
+                BVideos("Adrian","#video #humor", "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"),
+                BVideos("Maria","#tendencia #aplicaciones #moviles","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"),
+                BVideos("Maria","#tendencia #aplicaciones #moviles","https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"),
             )
     }
 }
