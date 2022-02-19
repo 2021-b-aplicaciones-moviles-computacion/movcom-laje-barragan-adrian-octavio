@@ -1,14 +1,12 @@
 package com.example.fakeapplication_snapchat
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import android.widget.VideoView
+import android.widget.*
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fakeapplication_snapchat.data.BVideos
-import android.widget.ImageView
-import android.widget.MediaController
 import com.example.fakeapplication_snapchat.ui.DescubrirActivity
 
 
@@ -37,7 +35,6 @@ class DescubirAdapter(
     // Puede ser más complejo (por ejm, si implementamos filtros o búsquedas)
     override fun getItemCount() = mDataSet.size
 
-    // En este ejemplo cada elemento consta solo de un nombre
     inner class DescubirViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val nombre: TextView
         val descripcion: TextView
@@ -61,13 +58,23 @@ class DescubirAdapter(
         fun bind(historia:BVideos){
             nombre.setText(historia.nombre)
             descripcion.setText(historia.descripcion)
-
             val mediaController = MediaController(contexto)
             mediaController.setAnchorView(video)
-            video.setVideoPath("http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
-            video.setMediaController(mediaController)
+            video.setVideoPath("https://videocdn.bodybuilding.com/video/mp4/62000/62792m.mp4");
             video.requestFocus()
+            var opcion = "start"
             video.start()
+            video.setOnClickListener {
+                if ( opcion.equals("start")) {
+                    video.pause()
+                    opcion = "pause"
+                }else{
+                    video.start()
+                    opcion = "start"
+                }
+            }
+
+
         }
     }
 }
