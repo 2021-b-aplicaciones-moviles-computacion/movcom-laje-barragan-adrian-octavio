@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".EditarEspecieActivity">
+
+    <EditText
+        android:id="@+id/txtEditPiel"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:hint="Tipo de piel"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditNombreEspecie" />
+
+    <EditText
+        android:id="@+id/txtEditPorcentaje"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:hint="Porcentaje en el Ecuador"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditNumero" />
+
+    <Button
+        android:id="@+id/btnEditarEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FF403C36"
+        android:text="Editar Especie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdg_domesicado_editar_especie" />
+
+    <TextView
+        android:id="@+id/textTituloEditarEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Especie"
+        app:layout_constraintBottom_toTopOf="@+id/txtEditNombreEspecie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegresarEditToEspecie"
+        app:layout_constraintVertical_bias="0.425" />
+
+    <RadioGroup
+        android:id="@+id/rdg_domesicado_editar_especie"
+        android:layout_width="306dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radio_si_editar_especie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/radio_no_editar_especie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="No" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="¿Amantan?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPorcentaje" />
+
+    <EditText
+        android:id="@+id/txtEditNumero"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:hint="Numero de Especie"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPiel" />
+
+    <TextView
+        android:id="@+id/textEditNombreEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nombreEspecie"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEditNombreEspecie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <EditText
+        android:id="@+id/txtEditNombreEspecie"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="160dp"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.306"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegresarEditToEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="13dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

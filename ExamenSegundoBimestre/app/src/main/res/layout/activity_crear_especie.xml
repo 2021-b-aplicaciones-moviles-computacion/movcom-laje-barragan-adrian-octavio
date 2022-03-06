@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".CrearEspecieActivity">
+
+    <TextView
+        android:id="@+id/textTituloEditarRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Crear Nueva Especie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegresarEspecie" />
+
+    <EditText
+        android:id="@+id/txtnewNombreEspecie"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="44dp"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloEditarRaza" />
+
+    <Button
+        android:id="@+id/btnCrearNuevaEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Crear Especie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opciones_sexo" />
+
+    <EditText
+        android:id="@+id/txtNewNumero"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:hint="Numero de Especie"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPiel" />
+
+    <EditText
+        android:id="@+id/txtNewPiel"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:hint="Tipo de piel"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnewNombreEspecie" />
+
+    <EditText
+        android:id="@+id/txtNewPorcentajeEcuador"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:hint="Porcentaje en el Ecuador"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewNumero" />
+
+    <RadioGroup
+        android:id="@+id/opciones_amamantan_crear"
+        android:layout_width="306dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radio_si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="¿Amantan?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewPorcentajeEcuador" />
+
+    <Button
+        android:id="@+id/buttonRegresarEspecie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

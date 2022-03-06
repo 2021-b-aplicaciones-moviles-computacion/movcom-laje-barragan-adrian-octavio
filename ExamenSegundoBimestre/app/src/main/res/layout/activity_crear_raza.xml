@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".CrearRazaActivity">
+
+    <Button
+        android:id="@+id/btnCrearRazaNueva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#FF403C36"
+        android:text="Crear Raza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opciones_domesticar_crear" />
+
+    <TextView
+        android:id="@+id/textTituloEditarRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Crear Nueva Raza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegresarCrearRazaToRaza" />
+
+    <EditText
+        android:id="@+id/txtNewNombreCientifico"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nombre Cientifico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtnewNombreRaza" />
+
+    <RadioGroup
+        android:id="@+id/opciones_domesticar_crear"
+        android:layout_width="306dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <RadioButton
+            android:id="@+id/radio_si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:checked="true"
+            android:text="Si" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtNewEsperanzaVida"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:hint="Esperanza de Vida"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewAlimentacion" />
+
+    <EditText
+        android:id="@+id/txtNewAlimentacion"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:hint="Alimentación"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewNombreCientifico" />
+
+    <EditText
+        android:id="@+id/txtnewNombreRaza"
+        android:layout_width="313dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="28dp"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTituloEditarRaza" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="¿Domesticado?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewEsperanzaVida" />
+
+    <Button
+        android:id="@+id/btnRegresarCrearRazaToRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:text="Regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

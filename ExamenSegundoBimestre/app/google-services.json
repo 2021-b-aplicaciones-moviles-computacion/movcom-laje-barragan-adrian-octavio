@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "496965433570",
+    "project_id": "b-aolb-moviles-20090",
+    "storage_bucket": "b-aolb-moviles-20090.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496965433570:android:45f6c60f8fa029619046bb",
+        "android_client_info": {
+          "package_name": "com.example.examensegundobimestre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "496965433570-jd9e7egbpnr4k6umtsqucdeg480ff4en.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOg0vcS_wk0bT4iKDLhPEANIsYS7DNkbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "496965433570-jd9e7egbpnr4k6umtsqucdeg480ff4en.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
